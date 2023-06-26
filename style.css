@@ -1,0 +1,280 @@
+*{
+    font-family: 'Robot', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index:1000 ;
+    background-color: rgba(72, 74, 190, 0.775);
+    height: auto;
+}
+.header .logo img{
+    height: 6rem;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.header .navbar a:hover{
+    color: rgb(32, 156, 218);
+    border-bottom: .2rem solid rgb(32, 156, 218);
+    padding-bottom: .5rem;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(abstract-nested-circles-over-dark-blue-background-wallpaper-1280x800_3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.home .content p{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+section{
+    padding: 2rem 5%;
+}
+.bb{
+    margin-top: 1rem;
+    display: inline-block;
+    background: #fff;
+    padding: 1rem 2rem;
+    color: black;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.bb:hover{
+    letter-spacing: .3rem;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6rem;
+    font-size: 4rem;
+}
+.heading span{
+    color: rgb(102, 0, 255);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .row .imag{
+    flex: 1 1 45rem;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 4rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+.about .row .content p{
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+.about .row .imag img{
+   width: 100%;
+}
+
+.bran .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.bran .box-container .box{
+    padding: 5rem;
+    text-align: center;
+}
+
+.bran .box-container .box img{
+    height: 10rem;
+}
+
+.bran .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.bran .box-container .box .na{
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+.bran .box-container .box .na span{
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+
+.bran .box-container .box:hover{
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+.bran .box-container .box:hover *{
+    color: black;
+}
+
+.bran .box-container .box a:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    padding: 2rem;
+    text-align: center;
+}
+
+.products .box-container .box image{
+    height: 2.5rem;
+}
+
+.products .box-container .box img{
+    height: 25rem;
+}
+.products .box-container .box .content h3{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.products .box-container .box .content .price{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr)) ;
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+.review .box-container .box p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius:50% ;
+}
+
+.review .box-container .box h3{
+    color: #fff;
+    padding: 1rem 09;
+    font-size: 2rem;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+}
+
+.contact .row .form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.contact .row form .input{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    border-bottom: 1px solid #fff;
+    border-radius: 2rem;
+}
+
+.contact .row form .input input{
+    width: 100%;
+    padding: 2rem;
+    background: none;
+    color: #fff;
+}
+
+.bb{
+    margin-top: 1rem;
+    display: inline-block;
+    background: #fff;
+    padding: 1rem 2rem;
+    color: black;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.bb:hover{
+    letter-spacing: .2rem;
+}
+.n{
+    width: 120px;
+    height: 130px;
+}
